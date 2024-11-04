@@ -1,9 +1,13 @@
-{
+{ 
   "name": "my-project",
   "private": true,
+  "homepage": "https://gitname.github.io/react-gh-pages",
   "version": "0.0.0",
   "type": "module",
-  "scripts": {
+  "scripts": 
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
@@ -29,5 +33,5 @@
     "postcss": "^8.4.47",
     "tailwindcss": "^3.4.13",
     "vite": "^5.4.8"
-  }
+  },
 }
