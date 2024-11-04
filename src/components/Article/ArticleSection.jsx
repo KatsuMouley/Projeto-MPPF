@@ -2,7 +2,7 @@ import React from 'react';
 
 function ArticleSection() {
   return (
-    <section className="flex flex-col bg-white p-8 justify-center items-center min-h-screen">
+    <section className="flex flex-col bg-white p-8 justify-center min-h-screen">
       <div className="w-3/4 text-left">
         <h1 className="text-3xl font-bold mb-2">
           A importância de se conscientizar a respeito de crimes digitais.
