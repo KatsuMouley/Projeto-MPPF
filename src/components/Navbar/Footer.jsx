@@ -4,7 +4,7 @@ import Logo from "../../assets/logo2.png"; // Logo não está sendo utilizado ne
 
 const Footer = () => {
   const handleShare = () => {
-    navigator.clipboard.writeText(window.location.href).then(() => {
+    navigator.clipboard.writeText("https://katsumouley.github.io/Projeto-MPPF").then(() => {
         alert("Link copiado");
     }).catch(err => {
       console.error("Erro ao copiar o link: ", err);
