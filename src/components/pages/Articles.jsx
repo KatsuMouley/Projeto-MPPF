@@ -1,14 +1,15 @@
 import React from 'react';
 import Navbar from '../Navbar/Navbar';
 import About from '../Article/AboutSection';
-import Article from '../Article/ArticleSection';
+import ArticleGrid from '../Selection/ArticleList';
+import Footer from '../Navbar/Footer';
 
 const Articles = () => {
   return (
-    <section>
-        <Article/>
-        <About/>
-    </section>
+  <div >
+      <ArticleGrid />
+      <Footer/>
+  </div>
   );
 };
 

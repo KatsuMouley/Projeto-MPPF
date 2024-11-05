@@ -8,7 +8,7 @@ const Navbar = () => {
         <div className="container py-3 flex items-center justify-between">
             {/* Logo section */}
             <div>
-                <img src={Logo} alt="Logo" className="w-40" />
+                <img src={Logo} alt="Logo" className="w-1/6" />
             </div>
             {/* Navlinks section */}
             <ul className="hidden md:flex items-center gap-5">

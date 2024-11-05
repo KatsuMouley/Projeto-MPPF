@@ -5,6 +5,8 @@ import Description from './components/Hero/Description';
 import About from './components/Article/AboutSection';
 import Articles from './components/pages/Articles';
 import Home from './components/pages/Home';
+import Contact from './components/pages/ContactUs';
+import Questions from './components/pages/Questions';
 
 const App = () => {
   return (
@@ -16,6 +18,8 @@ const App = () => {
           <Route path="/description" element={<Description />} />
           <Route path="/article" element={<Articles />} />
           <Route path="/about" element={<About />} />
+          <Route path="/contact_us" element={<Contact />} />
+          <Route path="/questionarios" element={<Questions />} />
         </Routes>
       </main>
     </Router>
