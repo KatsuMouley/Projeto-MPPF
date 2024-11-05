@@ -13,7 +13,7 @@ const Navbar = () => {
             {/* Navlinks section */}
             <ul className="hidden md:flex items-center gap-5">
                 <li className="hover:scale-110 duration-75">
-                    <Link to="/">Home</Link>
+                    <Link to="/Projeto-MPPF">Home</Link>
                 </li>
                 <li className="hover:scale-110 duration-75">
                     <Link to="/article">Artigos</Link>
