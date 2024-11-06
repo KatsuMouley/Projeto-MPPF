@@ -15,10 +15,10 @@ const Footer = () => {
     <footer className="fixed bottom-0 left-0 right-0 flex justify-end p-4">
       <button
         onClick={handleShare}
-        className="flex items-center font-bold py-2 px-4 rounded hover:scale-105 transition duration-300 active:cursor-default"
+        className="flex items-center font-bold py-2 px-4 bg-white rounded hover:scale-105 hover:bg-slate-200 transition duration-300 active:cursor-default bg-opacity-60"
       >
-        <i className="fas fa-share-alt mr-2"></i> {/* Ícone de compartilhamento */}
-        Compartilhar página
+        <i className="fas fa-share-alt mr-1"></i> {/* Ícone de compartilhamento */}
+        <span className="hidden sm:inline">Compartilhar</span> {/* Texto aparece somente em telas maiores */}
       </button>
     </footer>
   );
