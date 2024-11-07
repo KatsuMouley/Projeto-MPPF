@@ -14,12 +14,12 @@ const App = () => {
       <Navbar />
       <main>
         <Routes>
-          <Route path="/Projeto-MPPF" element={<Home />} />
-          <Route path="/article" element={<Articles />} />
-          <Route path="/sobre" element={<About />} />
-          <Route path="/contact_us" element={<Contact />} />
-          <Route path="/questionarios" element={<Questions />} />
-          <Route path="/faq" element={<FrequentQuestions />} />
+          <Route path="/Projeto-MPPF/" element={<Home />} />
+          <Route path="/Projeto-MPPF/article/" element={<Articles />} />
+          <Route path="/Projeto-MPPF/sobre/" element={<About />} />
+          <Route path="/Projeto-MPPF/contact_us/" element={<Contact />} />
+          <Route path="/Projeto-MPPF/questionarios/" element={<Questions />} />
+          <Route path="/Projeto-MPPF/faq/" element={<FrequentQuestions />} />
         </Routes>
       </main>
     </Router>

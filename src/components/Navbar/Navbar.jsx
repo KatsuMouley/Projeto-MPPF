@@ -26,26 +26,26 @@ const Navbar = () => {
         {/* Navlinks section (Desktop Menu) */}
         <ul className={`hidden md:flex items-center gap-5`}>
           <li className="hover:scale-110 duration-75">
-            <Link to="/Projeto-MPPF">Home</Link>
+            <Link to="/Projeto-MPPF/">Home</Link>
           </li>
           <li className="hover:scale-110 duration-75">
-            <Link to="/article">Artigos</Link>
+            <Link to="/Projeto-MPPF/article">Artigos</Link>
           </li>
           <li className="hover:scale-110 duration-75">
-            <Link to="/questionarios">Questionários</Link>
+            <Link to="/Projeto-MPPF/questionarios">Questionários</Link>
           </li>
           <li className="hover:scale-110 duration-75">
-            <Link to="/faq">Perguntas Frequentes</Link>
+            <Link to="/Projeto-MPPF/faq">Perguntas Frequentes</Link>
           </li>
           <li className="hover:scale-110 duration-75">
-            <Link to="/sobre">Sobre</Link>
+            <Link to="/Projeto-MPPF/sobre">Sobre</Link>
           </li>
         </ul>
 
         {/* Button section (Desktop) */}
         <div className="hidden md:block">
           <button className="border border-gray-400 px-4 py-1 rounded-lg hover:scale-105 transform duration-300">
-            <Link to="/contact_us">Entre em contato</Link>
+            <Link to="/Projeto-MPPF/contact_us">Entre em contato</Link>
           </button>
         </div>
       </div>
@@ -55,23 +55,23 @@ const Navbar = () => {
         <div className="md:hidden bg-white w-full text-center">
           <ul className="flex flex-col items-center gap-4 py-3">
             <li className="hover:scale-110 duration-75">
-              <Link to="/Projeto-MPPF">Home</Link>
+              <Link to="/Projeto-MPPF/">Home</Link>
             </li>
             <li className="hover:scale-110 duration-75">
-              <Link to="/article">Artigos</Link>
+              <Link to="/Projeto-MPPF/article">Artigos</Link>
             </li>
             <li className="hover:scale-110 duration-75">
-              <Link to="/questionarios">Questionários</Link>
+              <Link to="/Projeto-MPPF/questionarios">Questionários</Link>
             </li>
             <li className="hover:scale-110 duration-75">
-              <Link to="/faq">Perguntas Frequentes</Link>
+              <Link to="/Projeto-MPPF/faq">Perguntas Frequentes</Link>
             </li>
             <li className="hover:scale-110 duration-75">
-              <Link to="/sobre">Sobre</Link>
+              <Link to="/Projeto-MPPF/sobre">Sobre</Link>
             </li>
             <li>
               <button className="border border-gray-400 px-4 py-1 rounded-lg hover:scale-105 transform duration-300">
-                <Link to="/contact_us">Entre em contato</Link>
+                <Link to="/Projeto-MPPF/contact_us">Entre em contato</Link>
               </button>
             </li>
           </ul>
