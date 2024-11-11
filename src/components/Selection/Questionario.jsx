@@ -15,11 +15,11 @@ const Questionario = () => {
       url: 'https://forms.gle/Kki5qP7Cfv2tqvir7', // URL do questionário externo
     },
     {
-      title: 'Questionário 2 - Título aqui',
+      title: 'Você já foi vítima de algum crime cibernético?',
       url: '',
     },
     {
-      title: 'Questionário 3 - Título aqui',
+      title: 'proponha soluções para este problema',
       url: '',
     },
   ]; // Títulos e URLs dos questionários

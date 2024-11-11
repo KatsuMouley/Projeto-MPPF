@@ -10,27 +10,27 @@ const ArticleList = () => {
   const articles = [
     {
       title: 'A importância de se concientizar a respeito de crimes digitais.',
-      path: '/article/1', // Defina o caminho da rota correspondente
+      path: '/Projeto-MPPF/article/1', // Defina o caminho da rota correspondente
     },
     {
-      title: 'Artigo 2 - Título aqui',
-      path: '/article/2',
+      title: 'Top 10 crimes cibernéticos no qual você deve tomar cuidado',
+      path: '/Projeto-MPPF/article/2',
     },
     {
-      title: 'Artigo 3 - Título aqui',
-      path: '/article/3',
+      title: 'Relatório Crowdstrike 2023',
+      path: '/Projeto-MPPF/article/3',
     },
     {
-      title: 'Artigo 4 - Título aqui',
-      path: '/article/4',
+      title: 'Convenção de Budapeste',
+      path: '/Projeto-MPPF/article/4',
     },
     {
-      title: 'Artigo 5 - Título aqui',
-      path: '/article/5',
+      title: 'Meios de se proteger online',
+      path: '/Projeto-MPPF/article/5',
     },
     {
-      title: 'Artigo 6 - Título aqui',
-      path: '/article/6',
+      title: 'Perguntas frequentes',
+      path: '/Projeto-MPPF/faq',
     },
   ]; // Títulos e caminhos dos artigos
 

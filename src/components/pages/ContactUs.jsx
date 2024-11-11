@@ -15,12 +15,30 @@ const ContactUs = () => {
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Aqui você pode enviar os dados do formulário para um backend, exibir uma mensagem de sucesso, etc.
-    console.log('Form data submitted:', formData);
-    alert('Obrigado por entrar em contato!');
+    
+    try {
+      const response = await fetch('http://localhost:5000/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+      });
+  
+      if (response.ok) {
+        alert('E-mail enviado com sucesso!');
+        setFormData({ name: '', email: '', subject: '', message: '' });
+      } else {
+        alert('Erro ao enviar e-mail. Tente novamente mais tarde.');
+      }
+    } catch (error) {
+      console.error('Erro:', error);
+      alert('Erro ao enviar e-mail. Tente novamente mais tarde.');
+    }
   };
+  
 
   return (
     <div className="max-w-md mx-auto p-6 bg-white shadow-md m-10 rounded-lg">

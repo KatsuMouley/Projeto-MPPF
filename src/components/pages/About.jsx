@@ -10,8 +10,8 @@ const About = () => {
   ];
 
   return (
-    <section className="flex flex-col md:flex-row p-24 gap-4 mx-auto">
-      <div className="w-full md:w-1/2">
+    <section className="flex flex-col md:flex-row p-10 gap-4 mx-auto">
+      <div className="w-full">
         <GeneralDesc
           titulo="Sobre nosso projeto."
           textocorpo="O avanço da tecnologia trouxe inúmeros benefícios para a sociedade, mas também criou novos desafios, especialmente no campo da segurança digital. Em resposta a essa realidade, este site foi desenvolvido como parte de uma matéria de expansão, oferecida pela parceria entre o Ministério Público do Paraná e a Universidade Positivo.
@@ -21,7 +21,7 @@ const About = () => {
         />
       </div>
       
-      <div className="w-full md:w-1/2">
+      <div className="w-full">
         <Placeholder images={imageUrls} />
       </div>
       <Footer/>
