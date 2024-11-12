@@ -50,7 +50,7 @@ const ArticleList = () => {
         {articles.map((article, index) => (
           <div key={index} className="border rounded-lg p-4 shadow-lg hover:cursor-pointer hover:scale-105 transition duration-300">
             <img className='w-full h-48 object-cover mb-4' src={articlesImages[index] || articleImage1} alt={`Imagem do ${article.title}`} />
-            <Link to={article.path} className="text-lg font-semibold">https://docs.google.com/forms/d/115w4wC5Qz0MHdSL18p0zPrIBZJNd7kfgDb9l2QOhPOo/edit
+            <Link to={article.path} className="text-lg font-semibold">
               {article.title}
             </Link>
             {/* Você pode adicionar mais detalhes sobre o artigo aqui */}
