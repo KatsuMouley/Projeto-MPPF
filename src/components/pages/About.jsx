@@ -2,7 +2,7 @@ import React from 'react';
 import GeneralDesc from '../Hero/GeneralDesc';
 import Placeholder from '../Hero/Placeholder';
 import Footer from '../Navbar/Footer';
-import articleImage1 from '../../assets/Articles Images/Article 1/Thumb/image.png'; // Imagem do artigo
+import articleImage1 from '../../assets/Articles Images/Article 2/image7.png'; // Imagem do artigo
 
 const About = () => {
   const imageUrls = [
@@ -10,8 +10,8 @@ const About = () => {
   ];
 
   return (
-    <section className="flex flex-col md:flex-row p-10 gap-4 mx-auto">
-      <div className="w-full">
+    <section className="flex flex-col md:flex-row gap-4 mx-auto">
+      <div className="w-full p-10 pb-0">
         <GeneralDesc
           titulo="Sobre nosso projeto."
           textocorpo="O avanço da tecnologia trouxe inúmeros benefícios para a sociedade, mas também criou novos desafios, especialmente no campo da segurança digital. Em resposta a essa realidade, este site foi desenvolvido como parte de uma matéria de expansão, oferecida pela parceria entre o Ministério Público do Paraná e a Universidade Positivo.
@@ -21,7 +21,7 @@ const About = () => {
         />
       </div>
       
-      <div className="w-full">
+      <div className="w-full pt-10 pb-20 pl-5 pr-5">
         <Placeholder images={imageUrls} />
       </div>
       <Footer/>

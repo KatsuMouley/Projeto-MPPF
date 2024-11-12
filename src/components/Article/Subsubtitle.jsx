@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 
-const Title = ({ titulo, description }) => {
+const Subsubtitle = ({ titulo, description }) => {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 768); // Defina o breakpoint para mobile
+      setIsMobile(window.innerWidth < 768); // Define o breakpoint para mobile
     };
 
     window.addEventListener('resize', handleResize);
@@ -13,16 +13,15 @@ const Title = ({ titulo, description }) => {
   }, []);
 
   return (
-    <div className="w-full pb-20 text-left  font-roboto">
-      <h1 className={`${isMobile ? 'text-xl' : 'text-4xl'} font-bold mb-2`}>
+    <div className="w-full pl-16 text-left  font-roboto">
+      <h1 className={`${isMobile ? 'text-x1' : 'text-2xl'} font-bold mb-2 ml-5 text-gray-700`}>
         {titulo}
       </h1>
-      <p className={`${isMobile ? 'text-sm' : 'text-lg'} mb-4`}>
+      <p className={`${isMobile ? 'text-xs' : 'text-sm'} text-gray-600 mb-4 ml-5`}>
         {description}
       </p>
-      <hr className='border-gray-800 border-1'/>
     </div>
   );
 };
 
-export default Title;
+export default Subsubtitle;

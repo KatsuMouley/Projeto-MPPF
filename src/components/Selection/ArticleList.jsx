@@ -1,6 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom'; // Importando o Link
 import articleImage1 from '../../assets/Articles Images/Article 1/Thumb/image.png'; // Imagem do artigo
+import articleImage2 from '../../assets/Articles Images/Article 2/image13.png'; // Imagem do artigo
+import articleImage3 from '../../assets/Articles Images/Article 2/image12.png'; // Imagem do artigo
+import articleImage4 from '../../assets/Articles Images/Article 2/image4.png'; // Imagem do artigo
+import articleImage5 from '../../assets/Articles Images/Article 2/image16.png'; // Imagem do artigo
+
 
 import Navbar from '../Navbar/Navbar';
 import About from '../Article/AboutSection';
@@ -17,30 +22,25 @@ const ArticleList = () => {
       path: '/Projeto-MPPF/article/2',
     },
     {
-      title: 'Relatório Crowdstrike 2023',
+      title: 'A Convenção de Budapeste: Um Marco Internacional na Luta Contra Crimes Cibernéticos',
       path: '/Projeto-MPPF/article/3',
     },
     {
-      title: 'Convenção de Budapeste',
+      title: 'A Relação entre o Ministério Público do Paraná (MPPR) e os Crimes Digitais',
       path: '/Projeto-MPPF/article/4',
     },
     {
-      title: 'Meios de se proteger online',
-      path: '/Projeto-MPPF/article/5',
-    },
-    {
-      title: 'Perguntas frequentes',
+      title: 'Perguntas Frequentes',
       path: '/Projeto-MPPF/faq',
-    },
+    }
   ]; // Títulos e caminhos dos artigos
 
   const articlesImages = [
-    articleImage1,
-    '', // Adicione mais imagens aqui se necessário
-    '',
-    '',
-    '',
-    ''
+    articleImage2,
+    articleImage1, // Adicione mais imagens aqui se necessário
+    articleImage3,
+    articleImage5,
+    articleImage4
   ];
 
   return (
@@ -50,7 +50,7 @@ const ArticleList = () => {
         {articles.map((article, index) => (
           <div key={index} className="border rounded-lg p-4 shadow-lg hover:cursor-pointer hover:scale-105 transition duration-300">
             <img className='w-full h-48 object-cover mb-4' src={articlesImages[index] || articleImage1} alt={`Imagem do ${article.title}`} />
-            <Link to={article.path} className="text-lg font-semibold">
+            <Link to={article.path} className="text-lg font-semibold">https://docs.google.com/forms/d/115w4wC5Qz0MHdSL18p0zPrIBZJNd7kfgDb9l2QOhPOo/edit
               {article.title}
             </Link>
             {/* Você pode adicionar mais detalhes sobre o artigo aqui */}

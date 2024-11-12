@@ -15,7 +15,7 @@ function Middleimage({ images, description }) {
   return (
     <section className="flex flex-col justify-center">
       <div className="flex justify-center p-5 h-[25vh] items-center gap-5 w-full">
-        <div className="w-3/4 h-full bg-gray-500 hover:cursor-pointer hover:bg-gray-600 transition-all duration-300">
+        <div className="w-full h-full bg-gray-500 hover:cursor-pointer hover:bg-gray-600 transition-all duration-300">
           <img src={images} alt="Image 1" className="object-cover w-full h-full" />
         </div>
       </div>

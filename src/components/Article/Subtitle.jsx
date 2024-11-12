@@ -13,8 +13,8 @@ const Subtitle = ({ titulo, description }) => {
   }, []);
 
   return (
-    <div className="w-3/4 text-left">
-      <h1 className={`${isMobile ? 'text-xl' : 'text-4xl'} font-bold mb-2 ml-5`}>
+    <div className="w-full p-5 text-left  font-roboto">
+      <h1 className={`${isMobile ? 'text-xl' : 'text-4xl'} font-bold mb-2 ml-5 text-gray-900`}>
         {titulo}
       </h1>
       <p className={`${isMobile ? 'text-xs' : 'text-sm'} text-gray-600 mb-4 ml-5`}>
